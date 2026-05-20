@@ -291,22 +291,25 @@
       padding: clamp(90px, 13vw, 160px) 5.6vw;
     }
     .about-inner {
-      width: min(1100px, 100%);
+      width: min(1280px, 100%);
       margin: 0 auto;
       display: grid;
-      grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+      grid-template-columns: minmax(560px, .95fr) minmax(0, 1fr);
       gap: clamp(36px, 6vw, 86px);
       align-items: start;
     }
     .about-inner > * { min-width: 0; }
     .about h2 {
       margin: 0;
-      font-size: clamp(32px, 5vw, 72px);
-      line-height: 1.35;
+      font-size: clamp(38px, 4.4vw, 64px);
+      line-height: 1.7;
       font-weight: 400;
-      letter-spacing: .14em;
+      letter-spacing: .12em;
       max-width: 100%;
-      text-wrap: balance;
+    }
+    .about h2 .line {
+      display: block;
+      white-space: nowrap;
     }
     .about p {
       margin: 0 0 18px;
@@ -375,6 +378,7 @@
       }
       .more { margin-top: 30px; font-size: 18px; }
       .about-inner { grid-template-columns: 1fr; }
+      .about h2 { font-size: clamp(30px, 8vw, 42px); line-height: 1.65; }
     }
   </style>
 </head>
@@ -445,7 +449,7 @@
 
     <section class="about" id="about">
       <div class="about-inner">
-        <h2>暮らしのそばに、<br>静かな灯りを。</h2>
+        <h2><span class="line">暮らしのそばに、</span><span class="line">静かな灯りを。</span></h2>
         <div>
           <p>あかり屋は、キャンドル作家・中村コノミによる小さなキャンドルブランドです。</p>
           <p>季節の色、和の余白、手仕事のゆらぎを大切に、一つひとつ丁寧に制作しています。特別な日だけでなく、なんでもない夜にも似合うキャンドルをお届けします。</p>
